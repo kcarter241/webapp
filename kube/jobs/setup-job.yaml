@@ -9,9 +9,9 @@ spec:
     spec:
       containers:
         - name: setup
-          image: kbcarter/webapp:2305019
+          image: kbcarter/webapp:c0d5958
           command: ["/bin/bash","./setup.production.sh"]
           env:
           - name: PASSENGER_APP_ENV
-            value: development
+            value: production
       restartPolicy: Never
